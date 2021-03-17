@@ -1,0 +1,108 @@
+// === VARIABLES ===
+
+$fz-max-big: 104;
+$fz-max-small: 33;
+
+$fz-md1-big: 104;
+$fz-md1-small: 24;
+
+$fz-tablet-big: 40;
+$fz-tablet-small: 18;
+
+$fz-mobile-big: 26;
+$fz-mobile-small: 14;
+
+$minwidth: 320;
+$width-container: 1300;
+$md1: 1200;
+$tablet: 991.98;
+$mobile: 767.98;
+$md4: 479.98;
+// === / VARIABLES ===
+
+// === COMMON ===
+body {
+    font-family: intro;
+    color: #000;
+    background-color: #fff;
+}
+img {
+    width: 100%;
+}
+a {
+    color: #000000;
+}
+
+.container {
+    max-width: $width-container + px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+.banner {
+}
+.title {
+    &__planka {
+        position: relative;
+        width: 100%;
+        height: 300px;
+        line-height: 300px;
+        @media (max-width: $md1 + px) {
+            height: 300px;
+            line-height: 300px;
+        }
+        @media (max-width: $tablet + px) {
+            height: 140px;
+            line-height: 140px;
+        }
+        @media (max-width: $mobile + px) {
+            height: 80px;
+            line-height: 80px;
+        }
+    }
+    &__text {
+        font-size: $fz-max-big + px;
+        @media (max-width: $md1 + px) {
+            font-size: $fz-md1-big + px;
+        }
+        @media (max-width: $tablet + px) {
+            font-size: $fz-tablet-big + px;
+        }
+        @media (max-width: $mobile + px) {
+            font-size: $fz-mobile-big + px;
+        }
+    }
+}
+.text {
+    &__planka {
+        width: 100% ;
+    }
+    &-w {
+        background-color: #fff;
+    }
+    &__body {
+        padding: 50px 10px;
+        font-size: $fz-md1-small + px;
+        @media (max-width: $md1 + px) {
+            font-size: $fz-md1-small + px;
+        }
+        @media (max-width: $tablet + px) {
+            font-size: $fz-tablet-small + px;
+        }
+        @media (max-width: $mobile + px) {
+            font-size: $fz-mobile-small + px;
+        }
+        &-nopaddingbottom {
+            padding-bottom: 0;
+        }
+    }
+}
+.article{
+    &.__img {
+
+    }
+    &.__text{
+
+    }
+}
+
+// === / COMMON ===

@@ -1,0 +1,46 @@
+@import "reset";
+
+@import "mixin";
+
+@import "fonts";
+
+@import "swiper.min";
+
+@import "ui";
+
+@import "header";
+
+// === MAIN ===
+.page{
+    padding-top: 100px;
+}
+.about {
+    padding: 0 0 10px 0;
+    &__images {
+        display: flex;
+    }
+}
+.board {
+    background-color: #000;
+    color: #fff;
+    .swiper-button-next, .swiper-button-prev {
+        color: #fff;
+    }
+}
+.education {
+    background-color: #f7b40e;
+    color: #fff;
+    &__text {
+        background-color: #fff;
+        color: #000
+    }
+}
+.rent {
+    background-color: #a0d7f0;
+    color: #fff;
+}
+// === / MAIN ===
+
+@import "footer";
+
+

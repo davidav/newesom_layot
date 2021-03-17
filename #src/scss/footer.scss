@@ -1,0 +1,47 @@
+.contacts {
+    background-color: #000;
+    color: #fff;
+    &__title {
+    }
+    &__map {
+    }
+    &__text {
+    }
+    &__socials {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 10px;
+    }
+    &__soc {
+        @media (max-width: 1080px) {
+            width: 400px;
+            margin: 0 auto;
+        }
+        @media (max-width: 768px) {
+            width: 300px;
+            margin: 0 auto;
+        }
+    }    
+    &__social {
+        margin: 10px;
+    }
+
+    &__link {
+        display: flex;
+        justify-content: space-between;                
+        color: #fff;
+    }
+    &__linkText {
+        height: 72px;
+        line-height: 72px;
+        margin: 3px;
+        // font-size: 18px;
+        @media (max-width: 1080px) {
+            display: none;
+        }
+        font-size: $fz-md1-small + px;
+        @media (max-width: 1300px) {
+            font-size: $fz-tablet-small + px;
+        }
+    }
+}

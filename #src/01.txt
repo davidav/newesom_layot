@@ -1,0 +1,10 @@
+npm rebuild node-sass
+
+Error: Missing binding J:\_sites\newesom\newesom_layuot\node_modules\node-sass\vendor\win32-x64-72\binding.node
+Node Sass could not find a binding for your current environment: Windows 64-bit with Node.js 12.x
+
+Found bindings for the following environments:
+  - Windows 64-bit with Node.js 13.x
+
+This usually happens because your environment has changed since running `npm install`.
+Run `npm rebuild node-sass` to download the binding for your current environment.
